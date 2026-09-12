@@ -1,0 +1,21 @@
+{
+  "pass": 67,
+  "fail": 5,
+  "other": 2,
+  "total_scored": 72,
+  "score": 93.06,
+  "min_score": 90.0,
+  "meets_floor": true,
+  "gate_pass": true,
+  "enforce": true,
+  "failures": [
+    "configure_crypto_policy",
+    "file_permissions_ungroupowned",
+    "harden_sshd_ciphers_openssh_conf_crypto_policy",
+    "network_configure_name_resolution",
+    "use_pam_wheel_for_su"
+  ],
+  "regressions": [],
+  "baseline": null,
+  "openscap_line": "OpenSCAP: pass=67 fail=5 score=93.1% (target 90%)"
+}

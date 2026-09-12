@@ -25,6 +25,8 @@ ol10stig_accounts_password_pam_pwquality_password_auth: true
 ol10stig_accounts_password_pam_pwquality_retry: true
 ol10stig_accounts_password_pam_pwquality_system_auth: true
 ol10stig_accounts_password_pam_ucredit: true
+ol10stig_accounts_password_pam_unix_rounds_password_auth: true
+ol10stig_accounts_password_pam_unix_rounds_system_auth: true
 ol10stig_accounts_password_set_max_life_existing: true
 ol10stig_accounts_password_set_min_life_existing: true
 ol10stig_accounts_passwords_pam_faillock_audit: true
@@ -145,7 +147,6 @@ ol10stig_auditd_name_format: true
 ol10stig_auditd_overflow_action: true
 ol10stig_auditd_write_logs: true
 ol10stig_banner_etc_issue: true
-ol10stig_chrony_set_nts: true
 ol10stig_chronyd_client_only: true
 ol10stig_chronyd_no_chronyc_network: true
 ol10stig_chronyd_or_ntpd_set_maxpoll: true
@@ -158,6 +159,7 @@ ol10stig_configure_libreswan_crypto_policy: true
 ol10stig_configure_usbguard_auditbackend: true
 ol10stig_coredump_disable_backtraces: true
 ol10stig_coredump_disable_storage: true
+ol10stig_crypto_policy_not_overridden: true
 ol10stig_dconf_db_up_to_date: true
 ol10stig_dconf_gnome_banner_enabled: true
 ol10stig_dconf_gnome_disable_automount_open: true
@@ -182,12 +184,14 @@ ol10stig_directory_groupowner_sshd_config_d: true
 ol10stig_directory_owner_sshd_config_d: true
 ol10stig_directory_ownership_var_log_audit: true
 ol10stig_directory_permissions_sshd_config_d: true
+ol10stig_directory_permissions_var_log_audit: true
 ol10stig_disable_ctrlaltdel_burstaction: true
 ol10stig_disable_ctrlaltdel_reboot: true
 ol10stig_disable_host_auth: true
 ol10stig_disable_users_coredumps: true
 ol10stig_disallow_bypass_password_sudo: true
 ol10stig_display_login_attempts: true
+ol10stig_enable_gpgcheck_for_all_repositories: true
 ol10stig_ensure_gpgcheck_globally_activated: true
 ol10stig_ensure_gpgcheck_local_packages: true
 ol10stig_ensure_gpgcheck_never_disabled: true
@@ -253,11 +257,6 @@ ol10stig_file_permissions_backup_etc_passwd: true
 ol10stig_file_permissions_backup_etc_shadow: true
 ol10stig_file_permissions_binary_dirs: true
 ol10stig_file_permissions_cron_allow: true
-ol10stig_file_permissions_cron_d: true
-ol10stig_file_permissions_cron_daily: true
-ol10stig_file_permissions_cron_hourly: true
-ol10stig_file_permissions_cron_monthly: true
-ol10stig_file_permissions_cron_weekly: true
 ol10stig_file_permissions_crontab: true
 ol10stig_file_permissions_etc_audit_auditd: true
 ol10stig_file_permissions_etc_audit_rulesd: true
@@ -289,6 +288,7 @@ ol10stig_kernel_module_can_disabled: true
 ol10stig_kernel_module_sctp_disabled: true
 ol10stig_kernel_module_tipc_disabled: true
 ol10stig_logind_session_timeout: true
+ol10stig_mount_option_boot_efi_nosuid: true
 ol10stig_mount_option_boot_nodev: true
 ol10stig_mount_option_boot_nosuid: true
 ol10stig_mount_option_dev_shm_nodev: true
@@ -332,6 +332,7 @@ ol10stig_package_gdm_removed: true
 ol10stig_package_gssproxy_removed: true
 ol10stig_package_libreswan_installed: true
 ol10stig_package_policycoreutils_installed: true
+ol10stig_package_postfix_installed: true
 ol10stig_package_rsyslog_installed: true
 ol10stig_package_sssd_installed: true
 ol10stig_package_sudo_installed: true
@@ -342,6 +343,7 @@ ol10stig_package_usbguard_installed: true
 ol10stig_package_vsftpd_removed: true
 ol10stig_postfix_client_configure_mail_alias_postmaster: true
 ol10stig_postfix_prevent_unrestricted_relay: true
+ol10stig_require_emergency_target_auth: true
 ol10stig_require_singleuser_auth: true
 ol10stig_root_permissions_syslibrary_files: true
 ol10stig_rootfiles_configured: true
@@ -363,6 +365,7 @@ ol10stig_set_password_hashing_algorithm_logindefs: true
 ol10stig_set_password_hashing_algorithm_passwordauth: true
 ol10stig_set_password_hashing_algorithm_systemauth: true
 ol10stig_set_password_hashing_min_rounds_logindefs: true
+ol10stig_socket_pcscd_enabled: true
 ol10stig_special_service_block: true
 ol10stig_ssh_client_rekey_limit: true
 ol10stig_sshd_disable_compression: true
@@ -402,10 +405,12 @@ ol10stig_sysctl_net_core_bpf_jit_harden: true
 ol10stig_sysctl_net_ipv4_conf_all_accept_redirects: true
 ol10stig_sysctl_net_ipv4_conf_all_accept_source_route: true
 ol10stig_sysctl_net_ipv4_conf_all_forwarding: true
+ol10stig_sysctl_net_ipv4_conf_all_log_martians: true
 ol10stig_sysctl_net_ipv4_conf_all_rp_filter: true
 ol10stig_sysctl_net_ipv4_conf_all_send_redirects: true
 ol10stig_sysctl_net_ipv4_conf_default_accept_redirects: true
 ol10stig_sysctl_net_ipv4_conf_default_accept_source_route: true
+ol10stig_sysctl_net_ipv4_conf_default_log_martians: true
 ol10stig_sysctl_net_ipv4_conf_default_rp_filter: true
 ol10stig_sysctl_net_ipv4_conf_default_send_redirects: true
 ol10stig_sysctl_net_ipv4_icmp_echo_ignore_broadcasts: true
@@ -422,6 +427,5 @@ ol10stig_sysctl_net_ipv6_conf_default_accept_redirects: true
 ol10stig_sysctl_net_ipv6_conf_default_accept_source_route: true
 ol10stig_tftp_uses_secure_mode_systemd: true
 ol10stig_use_kerberos_security_all_exports: true
-ol10stig_use_pam_wheel_for_su: true
 ol10stig_wireless_disable_interfaces: true
 ol10stig_xwindows_runlevel_target: true
