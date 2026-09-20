@@ -9,7 +9,7 @@ galaxy_info:
   platforms:
   - name: OracleLinux
     versions:
-    - '9'
+    - '10'
   author: stigready
   company: StigReady
   galaxy_tags:
