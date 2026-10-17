@@ -63,5 +63,10 @@
     "version": "0.3.34",
     "role": "ol10_stig",
     "matrix_status": "green"
+  },
+  {
+    "version": "0.3.35",
+    "role": "ol10_stig",
+    "matrix_status": "green"
   }
 ]
