@@ -1,11 +1,9 @@
 {
   "role": "ol10_stig",
   "version": "0.3.28",
-  "factory_repo": "stigready/stigforge",
   "matrix_status": "green",
-  "pipeline_run_id": "38754486114",
   "factory_commit": "37ff3df3b4d8bcbce22867546d2f94eb80775bd2",
   "content_digest": "de0b26eb5650fb726e6d038f92ff190c4a24b598ec14680835ec84d282807194",
   "container_verify": "removed-0017",
-  "compliance_evidence": "Not produced here. Container verify was removed by decision 0017 because a container cannot evaluate most STIG rules; compliance evidence for this role comes from the AMI build that consumes it in stigready/stigready."
+  "compliance_evidence": "Not produced here. Container verify was removed because a container cannot evaluate most STIG rules; compliance evidence for this role comes from the AMI build that consumes it in the StigReady image factory."
 }
