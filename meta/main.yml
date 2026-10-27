@@ -1,9 +1,9 @@
 galaxy_info:
   role_name: ol10_stig
   namespace: stigready
-  description: Ansible role for Oracle Linux 10 DISA STIG hardening (stig). ComplianceAsCode/SSG
-    remediation, OpenSCAP-verified in StigForge CI. Install with ansible-galaxy or
-    git.
+  description: Ansible role for Oracle Linux 10, generated from the DRAFT - STIG for
+    Oracle Linux 10 profile in ComplianceAsCode SSG 0.1.82 (SSG's DRAFT profile; SSG
+    says it is not based on a DISA STIG).
   license: BSD-3-Clause
   min_ansible_version: '2.16'
   platforms:
@@ -17,8 +17,6 @@ galaxy_info:
   - ansible-role
   - compliance
   - devsecops
-  - disa
-  - disa-stig
   - hardening
   - infrastructure
   - oci
